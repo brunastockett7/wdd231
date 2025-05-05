@@ -1,0 +1,20 @@
+/* Basic page setup */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Heading style */
+  h1 {
+    color: #0066cc;
+    font-size: 2rem;
+  }
+  
+  /* Paragraph style */
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
