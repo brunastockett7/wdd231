@@ -3,69 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 231 Course Home Page for Bruna Stockett" />
-  <meta name="author" content="Bruna Stockett" />
-  <title>Bruna Stockett | WDD 231</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/larger.css" media="(min-width: 640px)" />
-
-  <!-- JavaScript Files -->
-  <script src="js/navigation.js" defer></script>
-  <script src="js/date.js" defer></script>
-  <script src="js/course.js" defer></script>
+  <meta name="description" content="Cedar Ridge Chamber of Commerce
+Home Page" />
+  <title>Cedar Ridge Chamber of Commerce</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
   <header>
-    <img src="images/your-photo.jpg" alt="Bruna's Photo" />
-    <span>Bruna Stockett</span>
+    <div class="logo">
+      <img src="images/logo.png" alt="Cedar Ridge Chamber of Commerce Logo" />
+      <div>
+        <h1>Cedar Ridge</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+    </div>
+    <nav>
+      <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <button id="menu" aria-label="Menu">&#9776;</button>
-    <ul class="navigation">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="chamber/">Chamber</a></li>
-      <li><a href="final/">Final</a></li>
-      <li><a href="https://github.com/brunastockett" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/brunastockett/" target="_blank">LinkedIn</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <h1>Home</h1>
-
-    <section>
-      <h2>Welcome to My Course Page</h2>
-      <p>This site was created for the WDD 231: Frontend Web Development II course at BYU–Idaho.</p>
+    <section class="hero">
+      <img src="images/cedar_ridge.png" alt="Hero Image of Cedar Ridge" />
+      <button class="cta-btn">Keynote Tickets</button>
     </section>
 
-    <section id="certificate">
-      <h2>Certificate Courses</h2>
-      <div class="course-buttons">
-        <button id="all">All Courses</button>
-        <button id="wdd">WDD Courses</button>
-        <button id="cse">CSE Courses</button>
+    <h2>Home</h2>
+
+    <section class="highlights">
+      <div class="card">
+        <h3>Events</h3>
+        <p>Community events coming soon...</p>
       </div>
-      <div id="courseContainer"></div>
-      <p>Total Credits: <span id="totalCredits">0</span></p>
+
+      <div class="card">
+        <h3>Current Weather</h3>
+        <p>🌤️ 75°F - Partly Cloudy</p>
+        <ul>
+          <li>High: 85°F | Low: 52°F</li>
+          <li>Humidity: 34%</li>
+          <li>Sunrise: 7:30am</li>
+          <li>Sunset: 9:59pm</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Weather Forecast</h3>
+        <ul>
+          <li>Today: <strong>90°F</strong></li>
+          <li>Wednesday: <strong>89°F</strong></li>
+          <li>Thursday: <strong>68°F</strong></li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>About Me</h2>
-      <p>I’m Bruna, a software development student passionate about learning front-end development and creating clean, responsive websites!</p>
+    <section class="spotlight">
+      <div class="business-card">
+        <h3>Business Name</h3>
+        <p>Tagline Here</p>
+        <p><strong>Email:</strong> info@gmail.com</p>
+        <p><strong>Phone:</strong> 800-555-1234</p>
+        <p><strong>URL:</strong> mybusiness.com</p>
+      </div>
+      <div class="business-card">
+        <h3>Business Name</h3>
+        <p>Tagline Here</p>
+        <p><strong>Email:</strong> info@gmail.com</p>
+        <p><strong>Phone:</strong> 800-555-1234</p>
+        <p><strong>URL:</strong> mybusiness.com</p>
+      </div>
+      <div class="business-card">
+        <h3>Business Name</h3>
+        <p>Tagline Here</p>
+        <p><strong>Email:</strong> info@gmail.com</p>
+        <p><strong>Phone:</strong> 800-555-1234</p>
+        <p><strong>URL:</strong> mybusiness.com</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Bruna Stockett | North Dakota</p>
-    <p id="lastModified"></p>
+    <address>
+      Cedar Ridge Chamber of Commerce<br />
+      10 Main Street, Cedar Ridge, UT<br />
+      info@cedarridgecc.org | (555) 555-5555
+    </address>
+    <div class="socials">
+      <a href="#" aria-label="YouTube">YouTube</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year"></span> Cedar Ridge Chamber of Commerce
+| Last Modified: <span id="lastModified"></span></p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

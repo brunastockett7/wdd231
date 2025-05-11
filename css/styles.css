@@ -1,0 +1,185 @@
+
+:root {
+  --primary: #2c3e50;
+  --secondary: #18bc9c;
+  --background: #f5f5f5;
+  --text: #333;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.logo p {
+  font-size: 0.9rem;
+}
+
+nav {
+  position: relative;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: var(--white);
+  border: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.business-card {
+  background-color: var(--white);
+  flex: 1 1 30%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+footer .socials {
+  margin: 0.5rem 0;
+}
+
+footer .socials a {
+  color: var(--white);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
