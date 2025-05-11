@@ -1,0 +1,80 @@
+/* Base Typography and Layout */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Navigation */
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  margin: 0;
+}
+
+nav ul.show {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Headings */
+h1, h2 {
+  color: #1A73E8;
+}
+
+/* Course Cards */
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.completed {
+  background-color: #e0ffe0;
+  border-left: 5px solid green;
+}
+
+.incomplete {
+  background-color: #ffe0e0;
+  border-left: 5px solid red;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+  margin-top: 2rem;
+}
+
+/* Main Container */
+main {
+  max-width: 800px;
+  margin: auto;
+}

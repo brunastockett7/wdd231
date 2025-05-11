@@ -2,16 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>WDD 231</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 Course Home Page for Bruna Stockett" />
+  <meta name="author" content="Bruna Stockett" />
+  <title>Bruna Stockett | WDD 231</title>
 
-  <!-- Normalize CSS (always comes first) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 
-  <!-- Your own custom CSS -->
-  <link rel="stylesheet" href="styles/main.css">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/larger.css" media="(min-width: 640px)" />
+
+  <!-- JavaScript Files -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/date.js" defer></script>
+  <script src="js/course.js" defer></script>
 </head>
+
 <body>
-  <h1>Hello from Bruna's WDD231 site!</h1>
-  <p>Welcome to my frontend development project 🎉</p>
+  <header>
+    <img src="images/your-photo.jpg" alt="Bruna's Photo" />
+    <span>Bruna Stockett</span>
+  </header>
+
+  <nav>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="chamber/">Chamber</a></li>
+      <li><a href="final/">Final</a></li>
+      <li><a href="https://github.com/brunastockett" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/brunastockett/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>Welcome to My Course Page</h2>
+      <p>This site was created for the WDD 231: Frontend Web Development II course at BYU–Idaho.</p>
+    </section>
+
+    <section id="certificate">
+      <h2>Certificate Courses</h2>
+      <div class="course-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="courseContainer"></div>
+      <p>Total Credits: <span id="totalCredits">0</span></p>
+    </section>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I’m Bruna, a software development student passionate about learning front-end development and creating clean, responsive websites!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Bruna Stockett | North Dakota</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
