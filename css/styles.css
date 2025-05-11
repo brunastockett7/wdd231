@@ -82,11 +82,15 @@ nav a.active {
   width: 100%;
   max-height: 300px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   display: block;
 }
 
